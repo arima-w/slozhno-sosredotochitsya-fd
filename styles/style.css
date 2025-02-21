@@ -1,7 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-attachment: fixed
+  background-attachment: fixed;
+  background-color: var(--bg-color);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -70,7 +71,7 @@
   align-self: center;
   justify-self: flex-end;
   margin-right: 9px;
-  margin-top: 31px;
+  margin-block-start: 31px;
 }
 
 .header__theme-menu-list {
@@ -114,7 +115,7 @@
   color: var(--title-h1-color, #DB00FF);
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
   padding-left: 11px;
-  padding-top: 24px;
+  padding-block-start: 24px;
 }
 
 .header__text {
@@ -122,9 +123,9 @@
   grid-row: 3/4;
   justify-self: flex-end;
   align-self: center;
-  margin-top: 12px;
+  margin-block-start: 12px;
   margin-right: 9px;
-  width: 355px;
+  inline-size: 355px;
 }
 
 .title-decor {
@@ -133,7 +134,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
-  margin-block-end: 2px;
+  margin-block-end: 3px;
 }
 
 .content {
@@ -152,7 +153,7 @@
 }
 
 .section:first-of-type {
-  padding-top: 40px;
+  padding-block-start: 40px;
 }
 
 .section-accent {
@@ -170,7 +171,7 @@
 }
 
 .article {
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .article__title {
@@ -182,7 +183,7 @@
   font-weight: 400;  
   color: var(--text-color, #F1B2CE);
   line-height: 23.4px;
-  margin-top: 10px;
+  margin-block-start: 10px;
 }
 
 .article__link {
@@ -195,6 +196,10 @@
 }
 }
 
+.article__link:focus {
+  outline: none;
+}
+
 .article__link:focus-visible {
   outline-color: var(--text-color);
   outline-style: solid;
@@ -202,21 +207,21 @@
 }
 
 .article-accent {
-  margin-top: 21px;
+  margin-block-start: 20px;
 }
 
 .section-gallery {
-  padding-bottom: 9px;
+  padding-block-end: 9px;
   padding-inline: 10px;
 }
 
 .section-gallery-img {
   width: 100%;
-  margin-top: 6px;
+  margin-block-start: 6px;
 }
 
 .footer {
-  height: 694px;
+  height: 109vh;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
@@ -230,7 +235,7 @@
   line-height: 95.7px;
   color: var(--title-h1-color, #DB00FF);
   text-shadow: 3px 3px 0 var(--accent-color, #FF0070);
-  padding-block-start: 30px;
+  padding-block-start: 27px;
 }
 
 .footer::after {
@@ -253,7 +258,7 @@
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-  bottom: 9px;
+  bottom: 12px;
   left: 11px;
 }
 
@@ -393,7 +398,7 @@
   }
 
   .footer {
-    height: 1013px;
+    height: 159vh;
   }
 
   .footer__title {
@@ -407,7 +412,7 @@
   }
 
   .footer::before {
-    bottom: 19px;
+    bottom: 22px;
     left: 21px;
   }
 }
@@ -474,7 +479,7 @@
   }
 
   .footer {
-    height: 760px;
+    height: 119vh;
   } 
 
   .footer__title {
