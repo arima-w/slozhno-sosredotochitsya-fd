@@ -13,6 +13,7 @@
   --background-image: url(../images/cover-image-dark.png);
   --item-color: #FF0070;
   --button-text-color: #FF0070;
+  --button-border-color: #FF007066;
 }
 
 .theme-dark .page {

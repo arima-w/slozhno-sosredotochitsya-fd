@@ -13,6 +13,7 @@
   --background-image: url(../images/cover-image-light.png);
   --item-color: #353430;
   --button-text-color: #353430;
+  --button-border-color: #32312D66;
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,6 +26,7 @@
   --background-image: url(../images/cover-image-light.png);
   --item-color: #353430;
   --button-text-color: #353430;
+  --button-border-color: #32312D66;
   }
 }
 
