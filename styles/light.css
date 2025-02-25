@@ -37,3 +37,9 @@
 .theme-light .header__block-absolut {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .header__block-absolut {
+    display: none;
+  }
+} 

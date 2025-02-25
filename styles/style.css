@@ -59,12 +59,6 @@
   line-height: 25px;
 }
 
-@media (prefers-color-scheme: light) {
-  .theme-auto .header__block-absolut {
-    display: none;
-  }
-} 
-
 .header__block-absolut::after {
   content: "";
   display: inline-block;
@@ -130,7 +124,7 @@
   align-self: flex-end;
   color: var(--title-h1-color, #DB00FF);
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
-  padding-left: 11px;
+  padding-left: 10px;
   padding-block-start: 24px;
 }
 
@@ -139,8 +133,8 @@
   grid-row: 3/4;
   justify-self: flex-end;
   align-self: center;
-  margin-block-start: 12px;
-  margin-right: 9px;
+  margin-block-start: 11px;
+  margin-right: 10px;
   max-width: 355px;
   width: 100%;
 }
@@ -229,7 +223,7 @@
 }
 
 .section-gallery {
-  padding-block-end: 9px;
+  padding-block-end: 37px;
   padding-inline: 10px;
 }
 
@@ -255,7 +249,6 @@
   line-height: 95.7px;
   color: var(--title-h1-color, #DB00FF);
   text-shadow: 2px 2px 0 var(--accent-color);
-  padding-block-start: 56px;
 }
 
 @media (width >= 768px) {
@@ -268,22 +261,17 @@
     padding-top: 60px;
   }
 
-  .header {
-  padding-bottom: 158px;
-  min-block-size: 1025px;
-}
-
   .header__block-absolut {
     top: 21px;
     right: 28px;
   }
   
-  .header::after {
+  .decorated-zone::after {
     top: 21px;
     right: 19px;
   }
 
-  .header::before {
+  .decorated-zone::before {
     bottom: 20px;
     left: 21px;
   }
@@ -295,7 +283,6 @@
 
   .header__title {
     padding-left: 1px;
-    padding-bottom: 15px;
   }
 
   .header__text {
@@ -386,41 +373,19 @@
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
-
-  .footer {
-    min-height: 1016px;
-  }
-
-  .footer__title {
-    padding-block-start: 0px;
-    padding-block-end: 5px;
-  }
-
-  .footer::after {
-    right: 19px;
-    top: 10px;
-  }
-
-  .footer::before {
-    bottom: 22px;
-    left: 21px;
-  }
 }
 
 @media (width >= 1024px) {
   .section:first-of-type {
     padding-top: 62px;
-}
+  }
 
   .header {
-    padding-bottom: 95px;
-    min-block-size: 766px;
+    padding-bottom: 96px;
   }
 
   .header__title {
-    padding-left: 0px;
-    margin-block-start: 90px;
-    font-size: 157px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
@@ -464,23 +429,7 @@
     margin-block-start: 20px;
   }
 
-  .footer {
-    min-height: 760px;
-
-  }
-
   .footer__title {
-    font-size: 157px;
-    padding-block-end: 7px;
-  }
-
-  .footer::before {
-    bottom: 20px;
-    left: 20px;
-  }
-
-  .footer::after {
-    right: 20px;
-    top: 12px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
