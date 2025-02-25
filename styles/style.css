@@ -278,15 +278,17 @@
 
   .header__theme-menu {
     margin-right: 19px;
-    margin-top: 191px;
+    margin-top: 149px;
   }
 
   .header__title {
     padding-left: 1px;
+    align-self: center;
   }
 
   .header__text {
-    align-self: end;
+    align-self: flex-start;
+    margin-block-start: 57px;
     margin-right: 19px;
     margin-bottom: 25px;
     max-width: 364px;
@@ -333,7 +335,7 @@
 
   .section-gallery {
     padding-inline: 20px;
-    padding-block-end: 69px;
+    padding-block-end: 60px;
     margin-block-start: 9px;
   }
 
@@ -386,12 +388,15 @@
 
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    padding-block-end: 14px;
+    align-self: end;
   }
 
   .header__text {
     margin-bottom: 38px;
     width: 100%;
     max-width: 491px;
+    align-self: end;
   }
 
   .header__theme-menu-list {
